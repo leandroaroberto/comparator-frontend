@@ -1,4 +1,4 @@
-# The Shop v2
+# Comparator
 
 <small>By Leandro A. Roberto</small>
 
