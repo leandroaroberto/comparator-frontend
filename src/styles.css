@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: #efeeee;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    background: #10021c;
+    color: #fff;
+    height: 60px;
+}
+
+.navbar .logo a {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar a i {
+    padding-right: 3px;
+}
+
+.navbar a:hover {
+    color: lightblue;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.header {
+    background-color: #21053f;
+    color: #fff;
+    max-height: 150px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img {
+    max-width: 150px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header input {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 3px;
+    border-color: darkgrey;
+    border-width: 1px;
+    height: 35px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    margin: 5px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.box p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+}
+
+.box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
+}
+
+.box-image {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.box i {
+    margin-right: 10px;
+}
+
+.box .price {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.categories .container {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.category {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin: 5px 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    min-width: 100px;
+    max-height: 40px;
+    text-align: center;
+}
+
+.category a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formBox {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.formBox > div {
+    padding-top: 10px;
+}
+
+.formBox .button {
+    width: 100%;
+}
+
+.formBox .textField {
+    width: 100%;
+}
+
+.formLogin .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dialog {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.dialog img {
+    max-width: 320px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    margin: 10px;
+}
+
+.dialog p {
+    margin: 10px;
+}
+
+.dialog strong {
+    font-size: x-large;
+}
+
+.button {
+    background-color: #3f2378 !important;
+    color: #fff !important;
+}
+
+@media (max-width: 650px) {
+    .header {
+        max-height: 200px;
+    }
+
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    .boxes .container {
+        display: block;
+        text-align: center;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .navbar .logo a {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .dialog {
+        display: block;
+        text-align: center;
+    }
+
+    .dialog img {
+        max-width: 80%;
+        max-height: 150px;
+    }
+}
