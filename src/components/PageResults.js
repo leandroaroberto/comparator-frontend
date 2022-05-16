@@ -2,7 +2,6 @@ import React from 'react';
 import Box from './Box'
 
 const PageResults = ({computerA = 0, computerB = 0}) => {
-
     return (
       <section className="boxes">
         <div className="container">

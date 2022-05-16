@@ -10,8 +10,8 @@ import axios from 'axios'
 function Home() {
 
   const [products, setProducts] = useState([])
-  const [computerA, setComputerA] = useState([])
-  const [computerB, setComputerB] = useState([])
+  const [computerA, setComputerA] = useState('')
+  const [computerB, setComputerB] = useState('')
 
   useEffect(() => {
     axios.get("http://localhost:8000/api/list")
@@ -27,7 +27,7 @@ function Home() {
           headerText="Let's find the best server for you"
         />
         <Search />
-        <Comparator products={products} setComputerA={setComputerA} setComputerB={setComputerB}/>
+        <Comparator products={products} setComputerA={setComputerA} setComputerB={setComputerB} computerA={computerA} computerB={computerB}/>
         <PageResults computerA={computerA} computerB={computerB} />
       </>    
   );
