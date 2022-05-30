@@ -20,14 +20,22 @@ export default function Search() {
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={2}>
               <Grid item xs={8}>
-                <Item><Slider/></Item>
+                <Item>
+                 <SelectCheckbox
+                    label = 'Should be a Slider here'
+                    apiUrl= ''
+                    selectedValue = ''
+                    objIndex='slider'
+                  />
+                </Item>
               </Grid>
               <Grid item xs={4}>
                 <Item>
                   <SelectCheckbox
                     label = 'RAM'
-                    apiUrl= 'resources/ram'
+                    apiUrl= 'resource/ram'
                     selectedValue = ''
+                    objIndex='ram'
                   />
                 </Item>
               </Grid>
@@ -35,8 +43,9 @@ export default function Search() {
                 <Item>
                   <SelectCheckbox
                     label = 'Hard disk type'
-                    apiUrl= 'resources/hdd-type'
+                    apiUrl= 'resource/hdd-type'
                     selectedValue = ''
+                    objIndex='hard_disk_type'
                   />
                 </Item>
               </Grid>
@@ -44,8 +53,9 @@ export default function Search() {
                 <Item>
                   <SelectCheckbox
                     label = 'Location'
-                    apiUrl= 'resources/location'
+                    apiUrl= 'resource/location'
                     selectedValue = ''
+                    objIndex='location'
                   />
                 </Item>
               </Grid>
